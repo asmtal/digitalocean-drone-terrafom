@@ -9,7 +9,7 @@ pipeline {
     stage('Install packages') {
       steps {
         echo 'Checking format'
-        sh 'apt-get update; apt-get install zip; '
+        sh 'apt-get update; apt-get --yes --force-yes install zip; '
       }
     }
   }
