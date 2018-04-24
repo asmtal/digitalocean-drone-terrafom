@@ -9,7 +9,7 @@ pipeline {
     stage('Install packages') {
       steps {
         echo 'Checking format'
-        sh 'apt-get update; apt-get --assume-yes install zip; '
+        sh 'apt-get update; apt-get --yes --assume-yes install zip; '
       }
     }
     stage('Install Terraform') {
