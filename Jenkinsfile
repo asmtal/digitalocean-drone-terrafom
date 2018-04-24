@@ -9,6 +9,7 @@ pipeline {
     stage('format check msg') {
       steps {
         echo 'Checking format'
+        sh 'ls -al'
       }
     }
   }
