@@ -6,10 +6,10 @@ pipeline {
 
   }
   stages {
-    stage('format check msg') {
+    stage('Install packages') {
       steps {
         echo 'Checking format'
-        sh 'ls -al'
+        sh 'apt-get update; apt-get install zip; '
       }
     }
   }
