@@ -19,5 +19,10 @@ pipeline {
 terraform --version; terraform init; '''
       }
     }
+    stage('Validate Terraform') {
+      steps {
+        sh 'terraform validate'
+      }
+    }
   }
 }
