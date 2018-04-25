@@ -1,7 +1,7 @@
 # Create drone machine
-resource "digitalocean_droplet" "coreos-1" {
-  image              = "coreos-stable"
-  name               = "${var.droplet_image}"
+resource "digitalocean_droplet" "drone" {
+  image              = "${var.droplet_image}"
+  name               = "drone"
   region             = "${var.droplet_region}"
   size               = "${var.droplet_size}"
   private_networking = true
